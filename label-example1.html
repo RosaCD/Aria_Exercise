@@ -11,15 +11,15 @@
     <h1> Accessibility exercises </h1>
   </header>
   <main>
-    <h2> ARIA exercise 1 (before) </h2>
+    <h2> ARIA exercise 1 (after) </h2>
     
     <form >
           <fieldset>
             <legend> Contact us </legend>
             <div class="form-control">
               <label for="name" class="sr-only">Name</label>
-            <img alt="" src="https://img.icons8.com/small/2x/user.png"/>
-              <input type="text" id="name" />
+              <img alt="" src="https://img.icons8.com/small/2x/user.png"/>
+              <input type="text" id="name" autocomplete="given-name" placeholder="Name"/> 
             </div>
 
             <div class="form-control">
@@ -28,7 +28,9 @@
               <input
                 type="text"
                 id="email"
-                
+                autocomplete="email"
+                placeholder="Email"
+
               />
             </div>
 
@@ -39,7 +41,8 @@
                 id="message"
                 cols="30"
                 rows="10"
-                
+                placeholder="Message"
+                autocomplete="off"
               ></textarea>
             </div>
             <input type="submit" value="Send" />
